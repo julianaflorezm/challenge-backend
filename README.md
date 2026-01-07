@@ -121,14 +121,10 @@ Las transferencias se gestionan como un agregado independiente, respetando el **
 La persistencia se realiza en memoria, utilizando arrays internos dentro de repositorios adaptadores.
 
 Esta decisión fue tomada para:
-
-Cumplir con los requerimientos del challenge.
-
-Evitar complejidad innecesaria de infraestructura.
-
-Mantener el foco en el diseño, la lógica de negocio y la arquitectura.
-
-Los repositorios se inyectan mediante Dependency Injection, garantizando el uso de una única instancia compartida entre módulos.
+- Cumplir con los requerimientos del challenge.
+- Evitar complejidad innecesaria de infraestructura.
+- Mantener el foco en el diseño, la lógica de negocio y la arquitectura.
+- Los repositorios se inyectan mediante Dependency Injection, garantizando el uso de una única instancia compartida entre módulos.
 
 ## Manejo de errores
 
