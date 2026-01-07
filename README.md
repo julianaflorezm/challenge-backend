@@ -115,17 +115,6 @@ Las transferencias se gestionan como un agregado independiente, respetando el **
   "company_id": "bf4af103-f146-4162-9197-92802d78b58f"
 }
 ```
-**Response body**
-```json
-[
-  {
-    "id": "36e440a2-446e-4c0c-97a3-a2b497d5fb6b",
-    "name": "Stefanini Group",
-    "type": "PYME",
-    "transfersLastMonthCount": 2
-  }
-]
-```
 
 ## Persistencia 
 
