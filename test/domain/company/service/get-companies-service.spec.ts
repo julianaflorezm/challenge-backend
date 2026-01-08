@@ -53,41 +53,7 @@ describe('GetCompaniesService', () => {
 
     expect(transferRepositoryMock.countByCompanyIdsLastMonth).toHaveBeenCalledTimes(1);
     expect(transferRepositoryMock.countByCompanyIdsLastMonth).toHaveBeenCalledWith(['c1', 'c2']);
-
-    // expect(result).toEqual([
-    //   {
-    //     id: 'c1',
-    //     name: 'Company 1',
-    //     type: 'PYME',
-    //     transfersLastMonthCount: 2,
-    //   },
-    //   {
-    //     id: 'c2',
-    //     name: 'Company 2',
-    //     type: 'COPORATE',
-    //     transfersLastMonthCount: 1,
-    //   },
-    // ]);
   });
-
-//   it('should return [] and not call repository methods when there are no companyIds', async () => {
-//     // Arrange
-//     transferRepositoryMock.findCompanyIdsWithTransfersLastMonth.mockResolvedValue([]);
-
-//     const service = new GetCompaniesService(companyRepositoryMock, transferRepositoryMock);
-
-//     // Act
-//     const result = await service.run();
-
-//     // Assert
-//     expect(result).toEqual([]);
-
-//     expect(transferRepositoryMock.findCompanyIdsWithTransfersLastMonth).toHaveBeenCalledTimes(1);
-
-//     // Ideal: no hacer llamadas innecesarias
-//     expect(companyRepositoryMock.findByIds).not.toHaveBeenCalled();
-//     expect(transferRepositoryMock.countByCompanyIdsLastMonth).not.toHaveBeenCalled();
-//   });
 
   it('should default transfersLastMonthCount to 0 if not present in counts', async () => {
     // Arrange
