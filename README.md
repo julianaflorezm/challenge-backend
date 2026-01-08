@@ -183,6 +183,9 @@ npm run start:dev
 ```cmd
 http://localhost:8081/
 ```
+### Las variables de entorno en un arcivo .env, son: 
+- PORT
+- COMPANY_TABLE_NAME
 
 ### Swagger disponible en:
 ```cmd
