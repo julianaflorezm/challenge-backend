@@ -115,6 +115,27 @@ Las transferencias se gestionan como un agregado independiente, respetando el **
   "company_id": "bf4af103-f146-4162-9197-92802d78b58f"
 }
 ```
+## ☁️ Parte adicional – AWS (Teórica)
+### AWS Lambda – Register Company
+
+Se diseñó una AWS Lambda Function como Inbound Adapter, que:
+- Recibe una solicitud HTTP desde API Gateway
+- Valida el input
+- Ejecuta el caso de uso RegisterCompanyHandler
+- Persiste datos usando DynamoDB vía AWS SDK
+```arduino
+aws/
+ ├─ lambda/company/register-company.lambda.ts
+ └─ lamba/composition/register-company.composition.ts
+```
+### DynamoDB Repository (AWS SDK v3)
+Implementación del puerto CompanyRepository usando @aws-sdk/client-dynamodb y @aws-sdk/lib-dynamodb.
+Operaciones:
+- save
+- findById
+- findByIds
+
+Esto mantiene el dominio desacoplado de AWS.
 
 ## Persistencia 
 
