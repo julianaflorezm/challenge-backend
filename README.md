@@ -164,7 +164,7 @@ El objetivo es validar la lógica sin depender de infraestructura externa.
 
 Se pueden correr con 
 ```cmd
-npx jest --config jest.config.ts
+npm run test
 ```
 
 ## Ejecución local
