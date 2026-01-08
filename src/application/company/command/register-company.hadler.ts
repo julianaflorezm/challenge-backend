@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { RegisterCompanyCommand } from './register-company.command';
-import { RegisterCompanyService } from 'src/domain/company/service/register-company-service';
+import { RegisterCompanyService } from '../../../domain/company/service/register-company-service';
 
 @Injectable()
 export class RegisterCompanyHandler {

@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Company } from 'src/domain/company/model/company';
-import { GetCompaniesService } from 'src/domain/company/service/get-companies-service';
+import { GetCompaniesService } from '../../../domain/company/service/get-companies-service';
 import { GetCompanyByTransferQuery } from './get-companies-count.query';
 
 @Injectable()
