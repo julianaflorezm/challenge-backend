@@ -141,6 +141,11 @@ Se incluirán pruebas unitarias enfocadas en:
 
 El objetivo es validar la lógica sin depender de infraestructura externa.
 
+Se pueden correr con 
+```cmd
+npx jest --config jest.config.ts
+```
+
 ## Ejecución local
 
 ### Requisitos
